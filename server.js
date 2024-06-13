@@ -1,16 +1,19 @@
 // Import the express module
 const express = require("express");
 const dotenv = require("dotenv").config();
-const usersRouter = require("./routes/contacts");
+const contactsRouter = require("./routes/contacts");
 
 // Create an instance of an Express application
 const app = express();
 
 // Define the port number where the server will listen for requests
-const port = process.env.PORT || 3000; 
+const port = process.env.PORT || 3000;
+
+// Middleware to parse JSON requests
+app.use(express.json());
 
 // Use the routers with /api prefix for better organization
-app.use('/api/users', usersRouter);
+app.use("/api/contacts", contactsRouter);
 
 // Define a route for the root URL ("/") that sends "Hello World!" as a response
 app.get("/", (req, res) => {
