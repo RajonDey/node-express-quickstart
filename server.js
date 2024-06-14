@@ -9,7 +9,7 @@ const app = express();
 // Define the port number where the server will listen for requests
 const port = process.env.PORT || 3000;
 
-// Middleware to parse JSON requests
+// Built-in Middleware to parse JSON requests
 app.use(express.json());
 
 // Use the routers with /api prefix for better organization
