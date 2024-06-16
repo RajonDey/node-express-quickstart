@@ -2,6 +2,11 @@
 const express = require("express");
 const dotenv = require("dotenv").config();
 const contactsRouter = require("./routes/contacts");
+const connectDb = require("./config/dbConnection");
+const { errorHandler } = require("./middleware/errorHandler");
+
+// Connect DB
+connectDb();
 
 // Create an instance of an Express application
 const app = express();
@@ -19,6 +24,9 @@ app.use("/api/contacts", contactsRouter);
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+
+// Error handler middleware should be the last middleware to catch errors
+app.use(errorHandler);
 
 // Start the server and listen on the specified port
 app.listen(port, () => {
