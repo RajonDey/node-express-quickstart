@@ -15,13 +15,12 @@ const app = express();
 // Define the port number where the server will listen for requests
 const port = process.env.PORT || 3000;
 
-// Built-in Middleware to parse JSON requests
+// Built-in Middleware to parse JSON request s
 app.use(express.json());
 
 // Use the routers with /api prefix for better organization
 app.use("/api/contacts", contactsRouter);
 app.use("/api/users", usersRouter);
-
 
 // Define a route for the root URL ("/") that sends "Hello World!" as a response
 app.get("/", (req, res) => {
