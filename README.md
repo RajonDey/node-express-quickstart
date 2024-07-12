@@ -59,3 +59,67 @@ cd node-express-quickstart
 ```bash
 npm init -y
 ```
+This creates a `package.json` file with default settings.
+
+
+### Step 2: Install Dependencies
+1. **Install Express.js**
+```bash
+npm install express
+```
+2. **Install Nodemon & dotenv as a Development Dependency**
+```bash
+npm install dotenv // - Loads env variables from .env file
+npm install -D nodemon // - Auto-restarts server on changes
+```
+3. **Add Start Script in package.json**
+```bash
+"scripts": {
+    "start": "node server.js", // Starts the server using Node.js,
+    "dev": "nodemon server.js" // Starts the server using Nodemon, which automatically restarts the server when file changes are detected.
+}
+```
+
+### Step 3: Create the Basic Project Structure
+1. **Create Main Application File**
+```bash
+touch server.js
+```
+2. **Create Directory for Routes and Middleware**
+```bash
+mkdir routes middleware
+```
+3. **Create .env File and Environment Variables**
+```bash
+touch .env
+PORT=3000 # You can change this port number if needed.
+```
+
+### Step 4: Write Basic Express Server with dotenv Integration
+1. **Write Basic Server Code in server.js**
+```bash
+// Import required modules
+const express = require('express');
+const dotenv = require('dotenv');
+
+// Load environment variables from .env file
+dotenv.config();
+
+// Create an instance of an Express application
+const app = express();
+
+// Define the port number where the server will listen for requests (from .env)
+const port = process.env.PORT || 3000;
+
+// Define a route for the root URL ("/") that sends "Hello World!" as a response
+app.get('/', (req, res) => {
+res.send('Hello World!'); });
+
+// Start the server and listen on the specified port console.log(`Server is running on <http://localhost>:${port}`); });
+```
+
+### Step 5: Start The Server
+Open your browser and go to [http://localhost:<PORT>](http://localhost:<PORT>) (replace <PORT> with whatever value you've set in your .env). You should see `"Hello World!" displayed.
+```bash
+npm run dev # or use 'npm start' if not developing actively.
+```
