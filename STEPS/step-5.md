@@ -3,35 +3,36 @@
 ### Built-in Middleware for POST Request Body
 Express provides built-in middleware functions that help parse incoming request bodies before your handlers receive them. This is particularly useful when dealing with POST requests where data is sent in the body of the request.
 
-1.  Enable JSON Parsing:
-    To parse JSON payloads, use express.json() middleware.// app.js or server.jsconst express = require('express');const app = express();// Enable parsing of JSON bodiesapp.use(express.json());// Other middlewares and route setups...
-    ```jsx
-    // app.js or server.js
-    const express = require('express');
-    const app = express();
+Enable JSON Parsing:
+To parse JSON payloads, use express.json() middleware.
     
-    // Enable parsing of JSON bodies
-    app.use(express.json());
-    
-    // Other middlewares and route setups...
-    ```    
+```jsx
+// app.js or server.js
+const express = require('express');
+const app = express();
 
-    *Express Throw Error*
-    Throwing errors within your routes/controllers helps you manage unexpected situations gracefully. Here's how you can do it:
-    
-    *Example*
-    ```jsx
-    // controllers/contactController.js
-    const createContact = (req, res) => {
-      if (!req.body.name || !req.body.email) {
-        res.status(400);
-        throw new Error("Name and Email are required");
-      }
-    
-      res.status(201).json({ message: "Create contact" });
-    };
-    ```    
-    In this example, if the name or email fields are missing from the request body, an error is thrown with a status code of 400 (Bad Request).
+// Enable parsing of JSON bodies
+app.use(express.json());
+
+// Other middlewares and route setups...
+```    
+
+Express Throw Error
+Throwing errors within your routes/controllers helps you manage unexpected situations gracefully. Here's how you can do it:
+
+Example
+```jsx
+// controllers/contactController.js
+const createContact = (req, res) => {
+  if (!req.body.name || !req.body.email) {
+    res.status(400);
+    throw new Error("Name and Email are required");
+  }
+
+  res.status(201).json({ message: "Create contact" });
+};
+```    
+In this example, if the name or email fields are missing from the request body, an error is thrown with a status code of 400 (Bad Request).
 
 
 ### Error Handling Middleware
