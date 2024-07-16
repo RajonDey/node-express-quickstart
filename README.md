@@ -17,7 +17,7 @@
 | Plugin | README |
 | ------ | ------ |
 | 📖 Intro | [📖 Introduction](#introduction) |
-| 📖 Step 1 | [STEPS/step-1.md][PlDb] |
+| 📖 Step 1 | [STEPS/step-1.md](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md) |
 
 
 ---
