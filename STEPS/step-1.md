@@ -1,7 +1,5 @@
 ## ⚙️ Project Setup & Express Server
 ---
-<br>
-<br>
 
 ### Step 1: Initialize a Node.js Project
 #### 1. Create a New Directory
@@ -14,6 +12,9 @@ cd node-express-quickstart
 npm init -y
 ```
 _This creates a `package.json` file with default settings._
+
+<br>
+<br>
 
 ### Step 2: Install Dependencies
 #### 1. **Install Express.js**
@@ -79,5 +80,5 @@ res.send('Hello World!'); });
 <br>
 <br>
 
-[Branch for Source Code &#x1F4C2;](https://github.com/RajonDey/node-express-quickstart/tree/2-Setting-Up-Controllers)
+[Branch for Source Code &#x1F4C2;](https://github.com/RajonDey/node-express-quickstart/tree/2-Setting-Up-Controllers) <br>
 [NEXT ➡](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md)
