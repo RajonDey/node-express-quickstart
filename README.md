@@ -1,5 +1,7 @@
 # A Complete Guide to How Websites Work Using Node.js and Express
 
+![A-Step-by-Step-Guide-with-Node.js-Express](https://www.rajondey.com/wp-content/uploads/2024/07/How-Websites-Work-A-Step-by-Step-Guide-with-Node.js-Express.png)
+
 ## Table of Contents
 1. [📖 Introduction](#introduction)
     - [🌐 How a Website Works](#how-a-website-works)
@@ -11,6 +13,12 @@
 5. [🏗️ Setting Up Controllers](#setting-up-controllers)
 6 .[🔄 Handling HTTP Methods and Middleware ](#handling-http-methods-and-middleware )
 7 .[✅ Conclusion ](#conclusion )
+
+| Plugin | README |
+| ------ | ------ |
+| 📖 Intro | [📖 Introduction](#introduction) |
+| 📖 Step 1 | [STEPS/step-1.md][PlDb] |
+
 
 ---
 
