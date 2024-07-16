@@ -1,5 +1,7 @@
 ## ⚙️ Project Setup & Express Server
 ---
+<br>
+<br>
 
 ### Step 1: Initialize a Node.js Project
 #### 1. Create a New Directory
@@ -12,7 +14,6 @@ cd node-express-quickstart
 npm init -y
 ```
 _This creates a `package.json` file with default settings._
-
 
 ### Step 2: Install Dependencies
 #### 1. **Install Express.js**
@@ -31,7 +32,8 @@ npm install -D nodemon // - Auto-restarts server on changes
     "dev": "nodemon server.js" // Starts the server using Nodemon, which automatically restarts the server when file changes are detected.
 }
 ```
-
+<br>
+<br>
 
 ### Step 3: Create the Basic Project Structure
 #### 1. **Create Main Application File**
@@ -47,6 +49,9 @@ mkdir routes middleware
 touch .env
 PORT=3000 # You can change this port number if needed.
 ```
+
+<br>
+<br>
 
 ### Step 4: Write Basic Express Server with dotenv Integration
 #### 1. **Write Basic Server Code in server.js**
@@ -71,6 +76,8 @@ res.send('Hello World!'); });
 // Start the server and listen on the specified port console.log(`Server is running on <http://localhost>:${port}`); });
 ```
 
----
+<br>
+<br>
 
-<a href="https://github.com/RajonDey/node-express-quickstart/tree/2-Setting-Up-Controllers" style="display: inline-block; padding: 10px 20px; font-size: 16px; color: white; background-color: orange; text-align: center; text-decoration: none; border-radius: 5px;">Branch for Source Code</a>
+[Branch for Source Code &#x1F4C2;](https://github.com/RajonDey/node-express-quickstart/tree/2-Setting-Up-Controllers)
+[NEXT ➡](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md)
