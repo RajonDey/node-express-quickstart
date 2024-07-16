@@ -3,21 +3,20 @@
 ![A-Step-by-Step-Guide-with-Node.js-Express](https://www.rajondey.com/wp-content/uploads/2024/07/How-Websites-Work-A-Step-by-Step-Guide-with-Node.js-Express.png)
 
 ## Table of Contents
-1. [📖 Introduction](#introduction)
-    - [🌐 How a Website Works](#how-a-website-works)
-    - [🛠️ What is Node.js?](#what-is-nodejs)
-    - [🚀 Benefits of Using Express.js with Node.js](#benefits-of-using-expressjs-with-nodejs)
-2. [⚙️ Project Setup & Creating an Express Server](#project-setup--creating-an-express-server)
-3. [🔌 API Client Setup](#api-client-setup)
-4. [🗺️ Express Router Setup](#express-router-setup)
-5. [🏗️ Setting Up Controllers](#setting-up-controllers)
-6 .[🔄 Handling HTTP Methods and Middleware ](#handling-http-methods-and-middleware )
-7 .[✅ Conclusion ](#conclusion )
 
-| Plugin | README |
+| Steps | Topic |
 | ------ | ------ |
 | 📖 Intro | [📖 Introduction](#introduction) |
-| 📖 Step 1 | [STEPS/step-1.md](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md) |
+| 📖 Step 1 | [⚙️ Project Setup & Express Server](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md) |
+| 📖 Step 2 | [🔌 Configuring the API Client](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md) |
+| 📖 Step 3 | [🗺️ Setting Up Express Router](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-3.md) |
+| 📖 Step 4 | [🏗️ Implementing Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-4.md) |
+| 📖 Step 5 | [🔄 Managing HTTP Methods & Middleware](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-5.md) |
+| 📖 Step 6 | [💾 Database Configuration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-6.md) |
+| 📖 Step 7.0 | [🔍 Authentication: Adding User Routes and Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.0.md) |
+| 📖 Step 7.1 | [🔍 Authentication: MongoDB Integration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.1.md) |
+| 📖 Step 7.2 | [🔍 Authentication: JWT](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.2.md) |
+| 📖 Step 8 | [🔗 Understanding Schema Relationships](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-8.md)
 
 
 ---
