@@ -67,7 +67,8 @@ Integration Databases Easily integrates various databases SQL NoSQL alike throug
   ```
   This creates a `package.json` file with default settings.
 
-
+<br>
+<br>
 ### Step 2: Install Dependencies
   1. **Install Express.js**
   ```bash
@@ -86,7 +87,8 @@ Integration Databases Easily integrates various databases SQL NoSQL alike throug
   }
   ```
 
-
+<br>
+<br>
 ### Step 3: Create the Basic Project Structure
   1. **Create Main Application File**
   ```bash
@@ -102,7 +104,8 @@ Integration Databases Easily integrates various databases SQL NoSQL alike throug
   PORT=3000 # You can change this port number if needed.
   ```
 
-
+<br>
+<br>
 ### Step 4: Write Basic Express Server with dotenv Integration
   1. **Write Basic Server Code in server.js**
   ```bash
@@ -126,9 +129,17 @@ Integration Databases Easily integrates various databases SQL NoSQL alike throug
   // Start the server and listen on the specified port console.log(`Server is running on <http://localhost>:${port}`); });
   ```
 
+<br>
+<br>
 
 ### Step 5: Start The Server
-  Open your browser and go to [http://localhost:<PORT>](http://localhost:<PORT>) (replace <PORT> with whatever value you've set in your .env). You should see `"Hello World!" displayed.
-  ```bash
-  npm run dev # or use 'npm start' if not developing actively.
-  ```
+Open your browser and go to [http://localhost:<PORT>](http://localhost:<PORT>) (replace <PORT> with whatever value you've set in your .env). You should see `"Hello World!" displayed.
+```jsx
+npm run dev # or use 'npm start' if not developing actively.
+```
+
+---
+<br>
+<br>
+
+
