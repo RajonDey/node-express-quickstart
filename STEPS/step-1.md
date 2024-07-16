@@ -14,7 +14,6 @@ npm init -y
 _This creates a `package.json` file with default settings._
 
 <br>
-<br>
 
 ### Step 2: Install Dependencies
 #### 1. **Install Express.js**
