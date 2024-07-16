@@ -1,8 +1,6 @@
 ## 🔌 API Client Setup
 
 When developing and testing your Express server, an API client is essential for interacting with and verifying your endpoints. It allows you to send requests to your server and view responses, ensuring everything works as expected before moving on to more complex integrations or deployments.
-
-<br>
 <br>
 
 ### **Why You Need an API Client:**
@@ -11,8 +9,6 @@ An API client helps you:
 *   🧪 Test individual endpoints.
 *   🐞 Debug issues by inspecting request/response details.
 *   ✅ Validate backend logic independently of the frontend.
-
-<br>
 <br>
 
 ### **Recommended Options:**
@@ -31,8 +27,6 @@ An API client helps you:
         
 4.  **cURL**:
     *   💻 A command-line tool available on most operating systems. Useful for sending requests directly from the terminal.
-        
-<br>
 <br>
 
 ### **In Case You Don’t Get It Yet:**
