@@ -1,4 +1,4 @@
-# A Complete Guide to How Websites Work Using Node.js and Express
+# How Websites Work: A Step-by-Step Guide with Node.js & Express
 
 ![A-Step-by-Step-Guide-with-Node.js-Express](https://www.rajondey.com/wp-content/uploads/2024/07/How-Websites-Work-A-Step-by-Step-Guide-with-Node.js-Express.png)
 
