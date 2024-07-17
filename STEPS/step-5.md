@@ -1,11 +1,11 @@
 ## 🔄 Handling HTTP Methods and Middleware
+[Branch for Source Code 📂](https://github.com/RajonDey/node-express-quickstart/tree/3-HTTP-Methods-and-Middleware)
 
 ### Built-in Middleware for POST Request Body
 Express provides built-in middleware functions that help parse incoming request bodies before your handlers receive them. This is particularly useful when dealing with POST requests where data is sent in the body of the request.
 
-Enable JSON Parsing:
-To parse JSON payloads, use express.json() middleware.
-    
+#### Enable JSON Parsing:<br>
+_To parse JSON payloads, use `express.json()` middleware._    
 ```jsx
 // app.js or server.js
 const express = require('express');
@@ -17,10 +17,9 @@ app.use(express.json());
 // Other middlewares and route setups...
 ```    
 
-Express Throw Error
-Throwing errors within your routes/controllers helps you manage unexpected situations gracefully. Here's how you can do it:
+#### Express Throw Error:<br>
+_Throwing errors within your routes/controllers helps you manage unexpected situations gracefully. Here's how you can do it:_
 
-Example
 ```jsx
 // controllers/contactController.js
 const createContact = (req, res) => {
@@ -32,13 +31,15 @@ const createContact = (req, res) => {
   res.status(201).json({ message: "Create contact" });
 };
 ```    
-In this example, if the name or email fields are missing from the request body, an error is thrown with a status code of 400 (Bad Request).
 
+<br>
+---
+<br>
 
 ### Error Handling Middleware
 To catch all unhandled errors in one place, add a global error-handling middleware at the end of your middleware stack.
 
-### Step-by-Step Guide:
+#### Step-by-Step Guide:
 1.  **Define Global Error Handler:**
     ```jsx
     // middleware/errorHandler.js
@@ -67,7 +68,7 @@ To catch all unhandled errors in one place, add a global error-handling middlewa
     module.exports = { errorHandler };
     ```
 
-    Create the constant:
+    Create the constant file:
     ```jsx
     // errorResponses.js
     const ERROR_RESPONSES = {
@@ -99,9 +100,12 @@ To catch all unhandled errors in one place, add a global error-handling middlewa
     module.exports = ERROR_RESPONSES;
     ```
 
+<br>
+<br>
+
 2.  **Use Global Error Handler in Your App:**
-    
     Add this handler after all other middlewares and route definitions.
+    
     ```jsx
     //app .js or server .js
     const{errorHandler}=require('./middlewares/errorHandler');
@@ -114,10 +118,12 @@ To catch all unhandled errors in one place, add a global error-handling middlewa
     
     //Start the server...
     ```
+<br>
+<br>
 
 3.  **Test Your Setup:**
-    now we will through our error, by our controller and test.
-    so for this we will install, ‘express-async-handler’, so by using this we don’t have to write all this try catch block to catch the errors.
+    Now we will through our error, by our controller and test.
+    So for this we will install, ‘express-async-handler’, so by using this we don’t have to write all this try catch block to catch the errors.
     ```jsx
     const expressAsyncHandler = require("express-async-handler");
     const ERROR_RESPONSES = require("../constant/ERROR_RESPONSES");
@@ -172,3 +178,7 @@ To catch all unhandled errors in one place, add a global error-handling middlewa
     };
     ```
     
+<br>  
+<br>  
+
+[NEXT ➡ Database Configuration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-6.md)
