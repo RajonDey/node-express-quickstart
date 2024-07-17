@@ -55,7 +55,7 @@ PORT=3000 # You can change this port number if needed.
 
 ### Step 4: Write Basic Express Server with dotenv Integration
 #### 1. **Write Basic Server Code in server.js**
-```bash
+```sh
 // Import required modules
 const express = require('express');
 const dotenv = require('dotenv');
@@ -73,10 +73,11 @@ const port = process.env.PORT || 3000;
 app.get('/', (req, res) => {
 res.send('Hello World!'); });
 
-// Start the server and listen on the specified port console.log(`Server is running on <http://localhost>:${port}`); });
+// Start the server and listen on the specified port
+console.log(`Server is running on <http://localhost>:${port}`); });
 ```
 
 <br>
 <br>
 
-[NEXT ➡](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md)
+[NEXT ➡ Configuring the API Client](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md)
