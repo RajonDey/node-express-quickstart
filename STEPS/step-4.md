@@ -68,25 +68,26 @@ module.exports = {
 };
 ```
 
-#### 5.  Linking Controller Functions to Routes:
-- Open your routes file where you have defined your endpoints for contacts (routes/contactRoutes.js) and modify it as follows:
-    ```jsx
-    const express = require("express");
-    const router = express.Router();
-    const {
-      getContacts,
-      getContact,
-      createContact,
-      updateContact,
-      deleteContact,
-    } = require("../controllers/contactController");
-    
-    router.route("/").get(getContacts).post(createContact);
-    
-    router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
-    
-    module.exports = router;
-    ```
+#### 5.  Linking Controller Functions to Routes:<br>
+_Open your routes file where you have defined your endpoints for contacts (routes/contactRoutes.js) and modify it as follows:_
+
+```jsx
+const express = require("express");
+const router = express.Router();
+const {
+  getContacts,
+  getContact,
+  createContact,
+  updateContact,
+  deleteContact,
+} = require("../controllers/contactController");
+
+router.route("/").get(getContacts).post(createContact);
+
+router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
+
+module.exports = router;
+```
 
 #### 6.  **Test Your Endpoints:
 - Now that you've set up both the controller and linked it with routes, you can test these endpoints using tools like Postman or Thunder Client.
