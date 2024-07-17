@@ -1,5 +1,6 @@
 ## 🗺️ Express Router Setup
-Branch for Source Code 📂
+[Branch for Source Code 📂
+](https://github.com/RajonDey/node-express-quickstart/tree/1-Express-Router-Setup)
 
 Organizing your routes is crucial for maintaining a clean and scalable codebase in an Express application. Using the `express.Router` class, you can modularize your route definitions, making them easier to manage and maintain.
 <br>
@@ -8,24 +9,26 @@ Organizing your routes is crucial for maintaining a clean and scalable codebase 
 *   📦 **Modularity**: Break down your routes into separate files based on functionality.
 *   🔧 **Maintainability**: Easier to read and update specific parts of your routing logic.
 *   🚀 **Scalability**: Simplifies adding new features without cluttering a single file.
-<br>  
+
+<br> 
+<br> 
 
 ### Steps to Set Up Express Router:
 
 1.  **📁 Create Route Files:**:
-    *   Create a directory named routes in your project root.
+    *   Create a directory named `routes` in your project root.
     *   Inside the routes directory, create individual route files (e.g., contacts.js, users.js, products.js).
-<br>          
+  
 2.  **Define Routes in Separate Files**:
-    *   In each route file, use the express.Router() method to define endpoints.
-        
+    *   In each route file, use the `express.Router()` method to define endpoints.
+  
     ```jsx
     // routes/contacts.js
     const express = require("express");
     const router = express.Router();
     
     router.get("/", (req, res) => {
-    //   res.send("Get all Contacts..."); // - Simple text
+       //res.send("Get all Contacts..."); - Simple text
       res.status(200).json({ Message: "Get all contacts" }); // - Formatted JSON-formatted data
     });
     
@@ -47,10 +50,9 @@ Organizing your routes is crucial for maintaining a clean and scalable codebase 
     
     module.exports = router;
     ```
-<br>  
+
 
 3.  **Integrate Routes with Main Application**:
-    
     *   Import and use these route modules in your main server file (app.js or server.js).
         
     ```jsx
@@ -70,4 +72,4 @@ Think of using Express Router like organizing different sections of a library in
 
 By setting up routers this way, you ensure that each part of your application is neatly organized and easily accessible!
 
-[NEXT ➡](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-4.md)
+[NEXT ➡ Implementing Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-4.md)
