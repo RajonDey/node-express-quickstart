@@ -89,7 +89,7 @@ router.route("/:id").get(getContact).put(updateContact).delete(deleteContact);
 module.exports = router;
 ```
 
-#### 6.  **Test Your Endpoints:
+#### 6.  Test Your Endpoints:
 - Now that you've set up both the controller and linked it with routes, you can test these endpoints using tools like Postman or Thunder Client.
     
 <br>
