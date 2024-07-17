@@ -20,48 +20,46 @@ Organizing your routes is crucial for maintaining a clean and scalable codebase 
     *   Inside the routes directory, create individual route files (e.g., contacts.js, users.js, products.js).
   
 2.  **Define Routes in Separate Files**:
-    *   In each route file, use the `express.Router()` method to define endpoints.
-        <br> 
-       ```jsx
-       // routes/contacts.js
-       const express = require("express");
-       const router = express.Router();
-       
-       router.get("/", (req, res) => {
-          //res.send("Get all Contacts..."); - Simple text
-         res.status(200).json({ Message: "Get all contacts" }); // - Formatted JSON-formatted data
-       });
-       
-       router.post("/", (req, res) => {
-         res.status(200).json({ Message: "Create contacts" }); 
-       });
-       
-       router.get("/:id", (req, res) => {
-         res.status(200).json({ Message: `Get contact for ${req.params.id}` }); 
-       });
-       
-       router.put("/:id", (req, res) => {
-         res.status(200).json({ Message: `Update contact for ${req.params.id}` }); 
-       });
-       
-       router.delete("/:id", (req, res) => {
-         res.status(200).json({ Message: `Delete contact for ${req.params.id}` }); 
-       });
-       
-       module.exports = router;
-       ```
+    _In each route file, use the `express.Router()` method to define endpoints._
+    ```jsx
+    // routes/contacts.js
+    const express = require("express");
+    const router = express.Router();
+    
+    router.get("/", (req, res) => {
+       //res.send("Get all Contacts..."); - Simple text
+      res.status(200).json({ Message: "Get all contacts" }); // - Formatted JSON-formatted data
+    });
+    
+    router.post("/", (req, res) => {
+      res.status(200).json({ Message: "Create contacts" }); 
+    });
+    
+    router.get("/:id", (req, res) => {
+      res.status(200).json({ Message: `Get contact for ${req.params.id}` }); 
+    });
+    
+    router.put("/:id", (req, res) => {
+      res.status(200).json({ Message: `Update contact for ${req.params.id}` }); 
+    });
+    
+    router.delete("/:id", (req, res) => {
+      res.status(200).json({ Message: `Delete contact for ${req.params.id}` }); 
+    });
+    
+    module.exports = router;
+    ```
 
 
-3.  **Integrate Routes with Main Application**:
-    *   Import and use these route modules in your main server file (app.js or server.js).
-      <br>   
-       ```jsx
-       // server.js
-       const usersRouter = require("./routes/contacts");
-       
-       // Use the routers
-       app.use('/users', usersRouter);
-       ```
+4.  **Integrate Routes with Main Application**:
+    _Import and use these route modules in your main server file (app.js or server.js)._
+    ```jsx
+    // server.js
+    const usersRouter = require("./routes/contacts");
+    
+    // Use the routers
+    app.use('/users', usersRouter);
+    ```
 
 <br>  
 <br>  
