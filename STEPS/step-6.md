@@ -1,9 +1,21 @@
 ## Database setup:
+[Branch for Source Code 📂](https://github.com/RajonDey/node-express-quickstart/tree/4-Database-Integration-with-MongoDB)
 
-Then we need to do our MongoDB setup
-*   create database and create contact collection
+In this section, we will set up MongoDB to store our contact data. Follow these steps to integrate MongoDB with your Express application.
 
-config folder / dbConnection.js:
+<br>
+<br>
+
+### Step 1: Create the Database and Collection
+First, ensure you have a MongoDB database created along with a contacts collection.
+
+<br>
+<br>
+
+### Step 2: Configure Database Connection
+Create a configuration file to handle the connection to your MongoDB instance.
+
+_📂 config/dbConnection.js_
 ```jsx
 const mongoose = require("mongoose");
 
@@ -19,18 +31,33 @@ const connectDb = async () => {
 
 module.exports = connectDb;
 ```
+<br>
+<br>
 
+### Step 3: Connect to the Database in Your Server File
+Update your server file to establish a connection with the database when the server starts.
 
-in server.js
+_📂 server.js_
 ```jsx
+const express = require('express');
+const app = express();
 const connectDb = require("./config/dbConnection");
 
 // Connect DB
 connectDb();
-```
 
-Next need to create Model:
-models/contactModel.js
+// Other middlewares and route setups...
+
+// Start the server...
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+```
+<br>
+<br>
+
+### Step 4: Create Mongoose Model
+Define a schema for your contacts using Mongoose.
+
+_📂 models/contactModel.js_
 ```jsx
 const mongoose = require("mongoose");
 
@@ -53,10 +80,14 @@ const contactSchema = mongoose.Schema({
 
 module.exports = mongoose.model("Contact", contactSchema);
 ```
-now that we have created the mongoose object.
 
+<br>
+<br>
 
-now let’s updated the contactController.js for CRUD operation and store the data in real database:
+### Step 5: Update Controllers for CRUD Operations
+Modify your controllers to interact with MongoDB using Mongoose models.
+
+_📂 controllers/contactController.js_
 ```jsx
 const expressAsyncHandler = require("express-async-handler");
 const ERROR_RESPONSES = require("../constant/ERROR_RESPONSES");
@@ -137,3 +168,17 @@ module.exports = {
   deleteContact,
 };
 ```
+
+<br>
+<br>
+
+### In case you don't get it:
+
+Think of setting up a database like organizing a filing cabinet for each employee record has its own folder containing their details. By creating a schema model, you define what information goes into each folder(name, email, and phone), ensuring consistency across all records.
+
+This way, your application can efficiently store, retrieve, and manage data, much like how an organized filing system makes it easy to find any employee's information quickly!
+
+<br>
+<br>
+
+[NEXT ➡ Authentication: Adding User Routes and Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.0.md)
