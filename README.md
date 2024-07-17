@@ -61,13 +61,14 @@ Express.js is a framework for Node.js that simplifies web application developmen
 
 <br>
 <br>
+## Steps:
 
 [⚙️ Project Setup & Express Server](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md) <br>
 [🔌 Configuring the API Client](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md) <br>
 [🗺️ Setting Up Express Router](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-3.md) <br>
 [🏗️ Implementing Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-4.md) <br>
 [🔄 Managing HTTP Methods & Middleware](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-5.md) <br>
-[💾 Database Configuration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-6.md)
+[💾 Database Configuration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-6.md) <br>
 [🔍 Authentication: Adding User Routes and Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.0.md) <br>
 [🔍 Authentication: MongoDB Integration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.1.md) <br>
 [🔍 Authentication: JWT](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.2.md) <br>
