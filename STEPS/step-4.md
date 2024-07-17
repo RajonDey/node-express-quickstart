@@ -106,4 +106,4 @@ Imagine you are managing a library, and your job is to handle all the books in t
 <br>
 <br>
 
-[NEXT ➡ Implementing Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-4.md)
+[NEXT ➡ Managing HTTP Methods & Middleware](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-5.md)
