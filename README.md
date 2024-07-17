@@ -56,6 +56,29 @@ Express.js is a framework for Node.js that simplifies web application developmen
 
 <br>
 <br>
----
 
-[NEXT &#x27A1; ⚙️ Project Setup & Express Server](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md)
+[⚙️ Project Setup & Express Server](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md)
+[🔌 Configuring the API Client](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md) 
+[🗺️ Setting Up Express Router](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-3.md) 
+[🏗️ Implementing Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-4.md)
+[🔄 Managing HTTP Methods & Middleware](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-5.md)
+[💾 Database Configuration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-6.md)
+[🔍 Authentication: Adding User Routes and Controllers](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.0.md)
+[🔍 Authentication: MongoDB Integration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.1.md)
+[🔍 Authentication: JWT](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-7.2.md)
+[🔗 Understanding Schema Relationships](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-8.md)
+
+<br>
+<br>
+
+## 🎉 Final Words
+Thank you for following along with this comprehensive guide on building a quick-start Node.js application. From setting up your project and configuring the API client to implementing controllers, managing HTTP methods & middleware, and understanding schema relationships, you've covered essential aspects of modern web development.
+
+### What's Next?
+As you continue your journey, consider exploring other topics too! ➡ https://www.rajondey.com/articles/
+
+Stay tuned for more tutorials and updates! Feel free to share your progress or ask questions on multiple platforms where I'll be sharing this content. Your feedback is invaluable!
+
+### Keep in Touch
+Keep in touch via [Twitter](https://twitter.com/rajjon_dey), [LinkedIn](https://www.linkedin.com/in/rajondey/), or by subscribing to my [YouTube Channel](https://www.youtube.com/channel/UCRKEjqMrb3EoaUtMr0PckZg?sub_confirmation=1) for new content and updates.
+Happy coding! 🚀
