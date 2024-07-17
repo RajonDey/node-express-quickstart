@@ -19,7 +19,7 @@ Organizing your routes is crucial for maintaining a clean and scalable codebase 
     *   Create a directory named `routes` in your project root.
     *   Inside the routes directory, create individual route files (e.g., contacts.js, users.js, products.js).
   
-2.  **Define Routes in Separate Files**:
+2.  **Define Routes in Separate Files**:<br>
     _In each route file, use the `express.Router()` method to define endpoints._
     ```jsx
     // routes/contacts.js
@@ -51,7 +51,7 @@ Organizing your routes is crucial for maintaining a clean and scalable codebase 
     ```
 
 
-4.  **Integrate Routes with Main Application**:
+4.  **Integrate Routes with Main Application**:<br>
     _Import and use these route modules in your main server file (app.js or server.js)._
     ```jsx
     // server.js
