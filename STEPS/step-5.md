@@ -181,4 +181,15 @@ To catch all unhandled errors in one place, add a global error-handling middlewa
 <br>  
 <br>  
 
+### In case you don't get it:
+
+Think of handling HTTP methods and using middleware like running a restaurant kitchen efficiently. The built-in middleware functions are like prep cooks who prepare ingredients before they reach chefs (your handlers), ensuring everything runs smoothly during service.
+
+By setting up proper error handling,you ensure that any issues are caught early,and appropriate responses are sent back,much like having a head chef oversee quality control in every dish served.
+
+This way,your application remains robust,reliable,and easyto maintain!
+
+<br>  
+<br>  
+
 [NEXT ➡ Database Configuration](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-6.md)
