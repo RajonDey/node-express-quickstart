@@ -63,6 +63,7 @@ Express.js is a framework for Node.js that simplifies web application developmen
 <br>
 
 ## Steps:
+Each step is designed to guide you through specific tasks, from initializing your project and configuring essential components to implementing core functionalities like routing, controllers, database integration, and authentication. By following these steps sequentially, you'll build a solid foundation for creating scalable and efficient backend systems for your web applications.
 
 [⚙️ Project Setup & Express Server](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-1.md) <br>
 [🔌 Configuring the API Client](https://github.com/RajonDey/node-express-quickstart/blob/main/STEPS/step-2.md) <br>
