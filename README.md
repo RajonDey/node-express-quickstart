@@ -32,10 +32,10 @@ In this guide, we will walk you through setting up a robust Node.js application 
 #### Simplified Flow:
 1. **User Request**: User interacts with the frontend.
 2. **HTTP Request**: Frontend sends an HTTP request to the backend.
-3 .**Backend Processing:** Backend processes request .
-4 .**Database Interaction:** Backend retrieves stores data database .
-5 .**HTTP Response:** Backend sends response back frontend .
-6 .**Frontend Update:** Frontend updates UI based on response .
+3. **Backend Processing:** Backend processes request.
+4. **Database Interaction:** Backend retrieves stores data database.
+5. **HTTP Response:** Backend sends response back frontend.
+6. **Frontend Update:** Frontend updates UI based on response.
 
 <br>
 <br>
